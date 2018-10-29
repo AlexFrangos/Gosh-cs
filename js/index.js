@@ -21,7 +21,7 @@ app.controller('AppCtrl', ['$scope', '$mdBottomSheet','$mdSidenav', '$mdDialog',
     },
     {
       link : '',
-      title: 'Friends',
+      title: 'heatmaps',
       icon: 'social:ic_group_24px'
     },
     {
