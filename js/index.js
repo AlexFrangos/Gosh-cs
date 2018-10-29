@@ -16,8 +16,8 @@ app.controller('AppCtrl', ['$scope', '$mdBottomSheet','$mdSidenav', '$mdDialog',
  	$scope.menu = [
     {
       link : '',
-      title: 'doctors',
-      icon: 'action:ic_doctors_24px' // we have to use Google's naming convention for the IDs of the SVGs in the spritesheet
+      title: 'Dashboard',
+      icon: 'action:ic_dashboard_24px' // we have to use Google's naming convention for the IDs of the SVGs in the spritesheet
     },
     {
       link : '',
@@ -89,9 +89,9 @@ app.controller('AppCtrl', ['$scope', '$mdBottomSheet','$mdSidenav', '$mdDialog',
     },
     {
       link : '',
-      title: 'VP doctors',
+      title: 'VP Dashboard',
       desc: 'App description goes here',
-      icon: 'action:ic_doctors_24px'
+      icon: 'action:ic_dashboard_24px'
     },
     {
       link : '',
