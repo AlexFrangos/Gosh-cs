@@ -1,0 +1,92 @@
+[ng-click]:hover {
+  cursor: pointer;
+}
+
+md-content.md-default-theme {
+  background-color: #eee;
+}
+
+md-sidenav.md-sidenav-list {
+  z-index: 1;
+}
+@media (max-width: 620px) {
+  md-sidenav.md-sidenav-list {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+md-sidenav.md-sidenav-list md-list {
+  border-right: 1px solid #d5d5d5;
+}
+md-sidenav > md-toolbar.md-tall {
+  padding: 15px;
+  height: auto;
+  max-height: 150px;
+}
+md-sidenav md-divider {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+md-sidenav.md-sidenav-list md-list-item.md-2-line .md-list-item-text,
+md-sidenav.md-sidenav-list md-list-item.md-2-line > .md-no-style .md-list-item-text {
+  margin-bottom: 10px;
+}
+md-sidenav.md-navigation-drawer md-list-item.md-2-line .md-list-item-text,
+md-sidenav.md-navigation-drawer md-list-item.md-2-line > .md-no-style .md-list-item-text {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+md-sidenav.md-navigation-drawer, md-sidenav.md-navigation-drawer.md-locked-open {
+  width: 256px;
+  min-width: 256px;
+  max-width: 256px;
+}
+
+md-backdrop + md-sidenav.md-sidenav-list {
+  z-index: 3;
+}
+
+md-sidenav:not(.md-sidenav-list) md-icon {
+  fill: #737373;
+  position: relative;
+}
+md-sidenav:not(.md-sidenav-list) .md-avatar {
+  height: 64px;
+  width: 64px;
+}
+
+/* More closely matches https://www.google.com/design/spec/components/lists.html#lists-specs */
+md-list-item.md-3-line md-divider[md-inset] {
+  left: 70px;
+}
+
+.md-avatar > svg {
+  border-radius: 50%;
+}
+
+/* Hide backdrop for internal sidenav */
+md-content md-backdrop {
+  display: none;
+}
+
+/* Shrink inputs */
+.edit-app md-input-container {
+  padding-bottom: 0;
+  line-height: 30px;
+  font-size: 14px;
+}
+.edit-app md-input-container:first-of-type {
+  margin-top: -16px;
+}
+
+/* fade animation */
+.animate-show {
+  transition: 0.75s ease-out all;
+  opacity: 1;
+}
+.animate-show.ng-hide {
+  height: 0;
+  min-height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
