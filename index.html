@@ -127,24 +127,7 @@
                     </md-list-item>
                     <md-divider></md-divider>
                   </md-toolbar>
-                  <md-list>
-                    <md-list-item class="md-3-line" ng-repeat="item in attributes">
-                      <md-icon class="md-accent" hide-sm md-svg-icon="{{item.icon}}"></md-icon>
-                      <div class="md-list-item-text">
-                        <h3>{{item.value || 'Attribute value'}}</h3>
-                        <p>{{item.title || 'Attribute title'}}</p>
-                      </div>
-                      <md-divider md-inset hide-sm></md-divider>
-                      <md-divider hide-gt-sm></md-divider>
-                    </md-list-item>
-                    <md-list-item class="md-3-line">
-                      <md-icon class="md-accent" hide-sm md-svg-icon="editor:ic_linear_scale_24px"></md-icon>
-                      <div class="md-list-item-text" ng-init="appScale = 20">
-                        <h3>{{appScale}} units</h3>
-                        <md-slider ng-show="editApp" flex md-discrete step="1" min="1" max="50" ng-model="appScale" aria-label="Scale"></md-slider>
-                        <p>Scale</p>
-                      </div>
-                    </md-list-item>
+              <img src="timetable.png">
                     <md-divider></md-divider>
                     <md-list-item>
                       <md-button class="md-primary" ng-show="!editApp">
