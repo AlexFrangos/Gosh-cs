@@ -1,6 +1,6 @@
 
 // Colors
-$gray: #eee;
+$gray: rgb(57, 87, 189);
 
 // Angular
 [ng-click] {
@@ -11,7 +11,7 @@ $gray: #eee;
 
 // Main content bg color
 md-content.md-default-theme {
- background-color:rgba(0, 0, 0, 0.5);
+ background-color:rgb(79, 113, 187);;
 }
 
 // Navigation drawer pattern: https://www.google.com/design/spec/patterns/navigation-drawer.html#navigation-drawer-specs
@@ -23,7 +23,7 @@ md-sidenav {
       width: 100%;
     }
     & md-list {
-      border-right: 1px solid darken($gray, 10%);
+      border-right: 1px solid rgb(79, 113, 187);;
     }
   }
   & > md-toolbar.md-tall {
@@ -64,7 +64,7 @@ md-backdrop + md-sidenav {
 
 md-sidenav:not(.md-sidenav-list) {
   md-icon {
-    fill: #737373;
+    fill: rgb(79, 113, 187);
     position: relative;
   }
   .md-avatar {

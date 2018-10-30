@@ -233,7 +233,7 @@ app.config(function ($mdThemingProvider) {
   var customBlueMap = $mdThemingProvider.extendPalette('indigo', {
     'contrastDefaultColor': 'light',
     'contrastDarkColors': ['50'],
-    '50': 'ffffff'
+    '50': 'rgb(79, 113, 187);'
   });
   $mdThemingProvider.definePalette('customBlue', customBlueMap);
   $mdThemingProvider.theme('default')

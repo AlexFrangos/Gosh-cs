@@ -3,7 +3,8 @@
 }
 
 md-content.md-default-theme {
-  background-color: #eee;
+  background-color: rgb(79, 113, 187);
+  fill: rgb(79, 113, 187);
 }
 
 md-sidenav.md-sidenav-list {
@@ -16,7 +17,7 @@ md-sidenav.md-sidenav-list {
   }
 }
 md-sidenav.md-sidenav-list md-list {
-  border-right: 1px solid #d5d5d5;
+  border-right: 1px solid rgb(79, 113, 187);
 }
 md-sidenav > md-toolbar.md-tall {
   padding: 15px;
