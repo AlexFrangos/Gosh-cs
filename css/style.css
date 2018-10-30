@@ -3,14 +3,14 @@
 }
 
 * {
-  background-color: rgba(42, 226, 156, 0) !important ;
+  background-color: rgba(140, 81, 146, 0) !important ;
 
   color: rgb(46, 53, 156);
 
 
 }
 md-content.md-default-theme {
-  fill: rgba(79, 113, 187, 0);
+  fill: rgba(79, 113, 187, 0.699);
 }
 
 md-sidenav.md-sidenav-list {
@@ -26,19 +26,13 @@ md-sidenav.md-sidenav-list md-list {
   border-right: 1px solid rgba(79, 113, 187, 0.0);
 }
 md-sidenav > md-toolbar.md-tall {
-  background-color: rgba(42, 226, 156, 0);
+  background-color: rgba(73, 95, 112, 0.623);
 
   padding: 15px;
   height: auto;
   max-height: 150px;
 }
-md-sidenav > md-toolbar.abc {
-  background-color: rgba(42, 226, 156, 0);
 
-  padding: 15px;
-  height: auto;
-  max-height: 150px;
-}
 md-sidenav md-divider {
   margin-top: 4px;
   margin-bottom: 4px;

@@ -45,20 +45,20 @@ app.controller('AppCtrl', ['$scope', '$mdBottomSheet', '$mdSidenav', '$mdDialog'
   // App items
   $scope.apps = [{
       link: '',
-      title: 'Aaaaa',
+      title: 'Fist',
       desc: '',
       icon: 'social:ic_group_24px',
       image: 'timetable.png'
     },
     {
       link: '',
-      title: 'Bbbbb',
+      title: 'Second',
       desc: '',
       icon: 'social:ic_group_24px',      image: 'tim2.png'
     },
     {
       link: '',
-      title: 'Ccccc',
+      title: 'Third',
       desc: '',
       icon: 'social:ic_group_24px',    },
     {
@@ -68,32 +68,32 @@ app.controller('AppCtrl', ['$scope', '$mdBottomSheet', '$mdSidenav', '$mdDialog'
       icon: 'social:ic_group_24px',    },
     {
       link: '',
-      title: 'Eeeee',
+      title: 'Fourth',
       desc: ' ',
       icon: 'social:ic_group_24px',    },
     {
       link: '',
-      title: 'Fffff',
+      title: 'Fifth',
       desc: ' ',
       icon: 'social:ic_group_24px',    },
     {
       link: '',
-      title: 'Ggggg',
+      title: 'Sixth',
       desc: ' ',
       icon: 'social:ic_group_24px',    },
     {
       link: '',
-      title: 'Hhhhh',
+      title: 'Seventh',
       desc: ' ',
       icon: 'social:ic_group_24px',    },
     {
       link: '',
-      title: 'Iiiii',
+      title: 'Eighth',
       desc: ' ',
       icon: 'social:ic_group_24px',    },
     {
       link: '',
-      title: 'Kkkk',
+      title: 'Ninth',
       desc: ' ',
       icon: 'social:ic_group_24px',    }
   ];
@@ -137,7 +137,7 @@ app.controller('AppCtrl', ['$scope', '$mdBottomSheet', '$mdSidenav', '$mdDialog'
   $scope.showAdd = function (ev) {
     $mdDialog.show({
         controller: DialogController,
-        template: '<md-dialog aria-label="Form"> <md-content class="md-padding"> <form name="userForm"> <div layout layout-sm="column"> <md-input-container flex> <label>First Name</label> <input ng-model="user.firstName"> </md-input-container> <md-input-container flex> <label>Last Name</label> <input ng-model="user.lastName"> </md-input-container> </div> <md-input-container flex> <label>Message</label> <textarea ng-model="user.biography" columns="1" md-maxlength="150"></textarea> </md-input-container> </form> </md-content> <div class="md-actions" layout="row"> <span flex></span> <md-button ng-click="answer(\'not useful\')"> Cancel </md-button> <md-button ng-click="answer(\'useful\')" class="md-primary"> Save </md-button> </div></md-dialog>',
+        template: '<md-dialog aria-label="Form"> <md-content class="md-padding"> <form name="userForm"> <div layout layout-sm="column"> <md-input-container flex> <label>GOSH Hospital</label> <input ng-model="user.firstName"> </md-input-container> <md-input-container flex> <label>Last Name</label> <input ng-model="user.lastName"> </md-input-container> </div> <md-input-container flex> <label>Message</label> <textarea ng-model="user.biography" columns="1" md-maxlength="150"></textarea> </md-input-container> </form> </md-content> <div class="md-actions" layout="row"> <span flex></span> <md-button ng-click="answer(\'not useful\')"> Cancel </md-button> <md-button ng-click="answer(\'useful\')" class="md-primary"> Save </md-button> </div></md-dialog>',
         targetEvent: ev,
       })
       .then(function (answer) {

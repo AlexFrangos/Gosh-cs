@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/angular_material/0.10.0/angular-material.min.css">
   </head>
 
-  <body layout="row" ng-controller="AppCtrl">
+  <body  background="bgimage.jpg" layout="row" ng-controller="AppCtrl">
       <div style="height: 600px;" ng-style="{'background-image':'url({{speaker.img}})', 'background-position': 'center center', 'background-size': 'cover'}"></div>
     </div>
     <md-sidenav layout="column" class="md-default-theme"  md-navigation-drawer" md-component-id="left"
@@ -35,8 +35,8 @@
           <span flex></span>
         </div>
         <span flex></span>
-        <div class="md-body-2">Firgggggstname Lastname</div>
-        <div class="md-body-1">email@domainname.com</div>
+        <div class="md-body-2">GOSH Hospital Lastname</div>
+        <div class="md-body-1">`Team 2</div>
       </md-toolbar>
       <md-list>
         <md-list-item class="md-2-line" ng-repeat="item in menu" role="link" ng-click="toggleSidenav('left')">
@@ -114,7 +114,7 @@
                   <md-list-item class="md-3-line">
  
                     <div class="md-list-item-text">
-                      <div class="md-headline">{{appName || 'App Name'}}</div>
+                      <div class="md-headline">{{appName || ''}}</div>
                       <h4>{{appDesc || ''}}</h4>
                     </div>
                   </md-list-item>
@@ -135,7 +135,7 @@
                   </md-list-item>
                   <md-divider></md-divider>
                 </md-toolbar>
-                <img ng-src="{{appimg}}"   alt="dfbdf" />
+                <img ng-src="{{appimg}}"  onError="this.onerror=null;this.src='/timetable.png';" />
 
                 </md-button>
                 </md-list-item>
