@@ -2,6 +2,12 @@
   cursor: pointer;
 }
 
+* {
+  background-color: rgb(79, 113, 187);
+  color: rgb(255, 255, 255);
+
+
+}
 md-content.md-default-theme {
   background-color: rgb(79, 113, 187);
   fill: rgb(79, 113, 187);
