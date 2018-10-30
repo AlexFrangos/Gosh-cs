@@ -1,4 +1,12 @@
 var app = angular.module('StarterApp', ['ngMaterial']);
+var mlwcApp = angular.module('mlwcApp', [])
+.controller('BgImagesListController', function($scope, $http) {
+    $scope.selBGImg = {
+        'background-image' : 'url(https://wiki.teamfortress.com/w/images/thumb/e/ec/Das_Naggenvatcher.png/250px-Das_Naggenvatcher.png)'
+    };
+
+})
+
 
 app.controller('AppCtrl', ['$scope', '$mdBottomSheet', '$mdSidenav', '$mdDialog', function ($scope, $mdBottomSheet, $mdSidenav, $mdDialog) {
 

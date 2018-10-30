@@ -1,11 +1,19 @@
 [ng-click]:hover {
   cursor: pointer;
+
+}
+[id="bg"] {
+    background: center center fixed ;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size:contain;
 }
 
 * {
   background-color: rgba(140, 81, 146, 0) !important ;
 
-  color: rgb(46, 53, 156);
+  color: rgb(255, 255, 255);
 
 
 }
