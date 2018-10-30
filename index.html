@@ -54,7 +54,7 @@
     </md-sidenav>
     <md-content layout="column" class="relative" layout-fill role="main">
       <md-button class="md-fab md-fab-bottom-right" aria-label="Add" ng-click="showAdd($event)">
-        <md-icon md-svg-icon="content:ic_add_24px" aria-label="Plus"></md-icon>
+      <md-icon md-svg-icon="content:ic_add_24px" aria-label="Plus"></md-icon>
       </md-button>
 
       <md-content flex layout="row">
@@ -63,10 +63,10 @@
           <md-toolbar class="md-whiteframe-z1" ng-class="{'md-hue-1':showSearch}">
             <div class="md-toolbar-tools">
               <md-button class="md-icon-button" ng-click="toggleSidenav('left')" hide-gt-md aria-label="Menu">
-                <md-icon md-svg-icon="navigation:ic_menu_24px" aria-label="Menu"></md-icon>
+             
               </md-button>
               <h3 ng-if="!showSearch">
-                Apps
+                Doctors
               </h3>
               <span flex ng-if="!showSearch"></span>
               <md-button class="md-icon-button" aria-label="Search" ng-click="toggleSearch()">
@@ -109,16 +109,16 @@
               <md-card>
                 <md-toolbar class="animate-show md-hue-2" ng-show="!editApp">
                   <md-list-item class="md-3-line">
-                    <md-icon class="md-avatar" hide-sm md-svg-icon="{{appIcon || 'navigation:ic_apps_24px'}}"></md-icon>
+ 
                     <div class="md-list-item-text">
                       <div class="md-headline">{{appName || 'App Name'}}</div>
-                      <h4>{{appDesc || 'App descripffffftion goes here'}}</h4>
+                      <h4>{{appDesc || 'Details'}}</h4>
                     </div>
                   </md-list-item>
                 </md-toolbar>
                 <md-toolbar class="animate-show md-hue-1 edit-app" ng-show="editApp">
                   <md-list-item class="md-3-line">
-                    <md-icon class="md-avatar" hide-sm md-svg-icon="{{appIcon || 'navigation:ic_apps_24px'}}"></md-icon>
+                     
                     <div class="md-list-item-text">
                       <md-input-container>
                         <label>App Name</label>

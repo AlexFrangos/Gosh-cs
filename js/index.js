@@ -44,66 +44,57 @@ app.controller('AppCtrl', ['$scope', '$mdBottomSheet', '$mdSidenav', '$mdDialog'
   // App items
   $scope.apps = [{
       link: '',
-      title: 'Workload',
-      desc: 'ddfvddf1',
-      icon: 'action:ic_donut_large_24px',
+      title: 'Aaaaa',
+      desc: '1111',
+      icon: 'social:ic_group_24px',
       image: 'timetable.png'
     },
     {
       link: '',
-      title: 'Memberships',
+      title: 'Bbbbb',
       desc: 'scshere',
-      icon: 'action:ic_card_membership_24px',
-      image: 'tim2.png'
+      icon: 'social:ic_group_24px',      image: 'tim2.png'
     },
     {
       link: '',
-      title: 'Transactions',
+      title: 'Ccccc',
       desc: 'App description goes here',
-      icon: 'action:ic_shopping_cart_24px'
-    },
+      icon: 'social:ic_group_24px',    },
     {
       link: '',
-      title: 'Categories',
+      title: 'Ddddd',
       desc: 'App description goes here',
-      icon: 'device:ic_storage_24px'
-    },
+      icon: 'social:ic_group_24px',    },
     {
       link: '',
-      title: 'Geographics',
+      title: 'Eeeee',
       desc: 'App description goes here',
-      icon: 'maps:ic_place_24px'
-    },
+      icon: 'social:ic_group_24px',    },
     {
       link: '',
-      title: 'Business',
+      title: 'Fffff',
       desc: 'App description goes here',
-      icon: 'action:ic_store_24px'
-    },
+      icon: 'social:ic_group_24px',    },
     {
       link: '',
-      title: 'Financials',
+      title: 'Ggggg',
       desc: 'App description goes here',
-      icon: 'editor:ic_attach_money_24px'
-    },
+      icon: 'social:ic_group_24px',    },
     {
       link: '',
-      title: 'VP Dashboard',
+      title: 'Hhhhh',
       desc: 'App description goes here',
-      icon: 'action:ic_dashboard_24px'
-    },
+      icon: 'social:ic_group_24px',    },
     {
       link: '',
-      title: 'Inventory',
+      title: 'Iiiii',
       desc: 'App description goes here',
-      icon: 'editor:ic_format_list_numbered_24px'
-    },
+      icon: 'social:ic_group_24px',    },
     {
       link: '',
-      title: 'Employees',
+      title: 'Kkkk',
       desc: 'App description goes here',
-      icon: 'action:ic_perm_identity_24px'
-    }
+      icon: 'social:ic_group_24px',    }
   ];
 
   // Mock attributes
