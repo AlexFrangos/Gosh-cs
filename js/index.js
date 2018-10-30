@@ -49,13 +49,15 @@ app.controller('AppCtrl', ['$scope', '$mdBottomSheet','$mdSidenav', '$mdDialog',
       link : '',
       title: 'Workload',
       desc: 'App description goes here',
-      icon: 'action:ic_donut_large_24px'
+      icon: 'action:ic_donut_large_24px',
+      image : 'img ng-src="example.png"'
     },
     {
       link : '',
       title: 'Memberships',
       desc: 'App description goes here',
-      icon: 'action:ic_card_membership_24px'
+      icon: 'action:ic_card_membership_24px',
+        image : 'img ng-src="tim2.png"'
     },
     {
       link : '',
