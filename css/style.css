@@ -3,14 +3,14 @@
 }
 
 * {
-  background-color: rgb(79, 113, 187);
-  color: rgb(255, 255, 255);
+  background-color: rgba(42, 226, 156, 0) !important ;
+
+  color: rgb(46, 53, 156);
 
 
 }
 md-content.md-default-theme {
-  background-color: rgb(79, 113, 187);
-  fill: rgb(79, 113, 187);
+  fill: rgba(79, 113, 187, 0);
 }
 
 md-sidenav.md-sidenav-list {
@@ -23,9 +23,18 @@ md-sidenav.md-sidenav-list {
   }
 }
 md-sidenav.md-sidenav-list md-list {
-  border-right: 1px solid rgb(79, 113, 187);
+  border-right: 1px solid rgba(79, 113, 187, 0.0);
 }
 md-sidenav > md-toolbar.md-tall {
+  background-color: rgba(42, 226, 156, 0);
+
+  padding: 15px;
+  height: auto;
+  max-height: 150px;
+}
+md-sidenav > md-toolbar.abc {
+  background-color: rgba(42, 226, 156, 0);
+
   padding: 15px;
   height: auto;
   max-height: 150px;

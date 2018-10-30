@@ -14,7 +14,8 @@
 
 </head>
 
-<body>
+<body >
+  
 
   <html lang="en" ng-app="StarterApp">
 
@@ -23,6 +24,8 @@
   </head>
 
   <body layout="row" ng-controller="AppCtrl">
+      <div style="height: 600px;" ng-style="{'background-image':'url({{speaker.img}})', 'background-position': 'center center', 'background-size': 'cover'}"></div>
+    </div>
     <md-sidenav layout="column" class="md-default-theme"  md-navigation-drawer" md-component-id="left"
       md-is-locked-open="$mdMedia('gt-md')">
       <md-toolbar class="md-hue-2 md-tall">
@@ -61,7 +64,7 @@
         <md-sidenav layout="column" layout-fill class="md-sidenav-left md-sidenav-list" md-component-id="nav"
           md-is-locked-open="$mdMedia('gt-sm')">
           <md-toolbar class="md-whiteframe-z1" ng-class="{'md-hue-1':showSearch}">
-            <div class="md-toolbar-tools">
+            <div class="md-toolbar-tools md-tall">
               <md-button class="md-icon-button" ng-click="toggleSidenav('left')" hide-gt-md aria-label="Menu">
                 //<md-icon md-svg-icon="navigation:ic_menu_24px" aria-label="Menu"></md-icon>
               </md-button>
@@ -92,8 +95,8 @@
           </md-list>
         </md-sidenav>
         <md-content layout="column" layout-fill>
-          <md-toolbar class="animate-show md-whiteframe-z1">
-            <div class="md-toolbar-tools">
+          <md-toolbar class="animate-show class"abc" md-whiteframe-z1">
+            <div class="md-toolbar-tools md-tall">
               <md-button class="md-icon-button" ng-click="toggleSidenav('nav')" hide-gt-sm aria-label="Menu">
                 <md-icon md-svg-icon="navigation:ic_arrow_back_24px" aria-label="Menu"></md-icon>
               </md-button>
@@ -107,16 +110,16 @@
           <div layout-gt-sm="row" layout-align="center center">
             <div flex-gt-sm="95" flex-gt-lg="80">
               <md-card>
-                <md-toolbar class="animate-show md-hue-2" ng-show="!editApp">
+                <md-toolbar class="animate-show " ng-show="!editApp">
                   <md-list-item class="md-3-line">
  
                     <div class="md-list-item-text">
                       <div class="md-headline">{{appName || 'App Name'}}</div>
-                      <h4>{{appDesc || 'Details'}}</h4>
+                      <h4>{{appDesc || ''}}</h4>
                     </div>
                   </md-list-item>
                 </md-toolbar>
-                <md-toolbar class="animate-show md-hue-1 edit-app" ng-show="editApp">
+                <md-toolbar class="animate-show  edit-app" ng-show="editApp">
                   <md-list-item class="md-3-line">
                      
                     <div class="md-list-item-text">
@@ -157,7 +160,11 @@
 
   <script src="js/index.js"></script>
 
-
+  <style>
+      div[role=main] > md-content {
+          background-image: url(tim2.png);
+          }
+      </style>
 
 
 </body>

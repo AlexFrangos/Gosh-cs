@@ -11,7 +11,8 @@ app.controller('AppCtrl', ['$scope', '$mdBottomSheet', '$mdSidenav', '$mdDialog'
   $scope.toggleSidenav = function (menuId) {
     $mdSidenav(menuId).toggle();
   };
-
+  $scope.speaker = {};
+  $scope.speaker.img = "https://cdn.shopify.com/s/files/1/0303/7725/t/2/assets/clio-emt-speaker.png?245932330282961812";
   // Menu items
   $scope.menu = [{
       link: '',
@@ -45,55 +46,55 @@ app.controller('AppCtrl', ['$scope', '$mdBottomSheet', '$mdSidenav', '$mdDialog'
   $scope.apps = [{
       link: '',
       title: 'Aaaaa',
-      desc: '1111',
+      desc: '',
       icon: 'social:ic_group_24px',
       image: 'timetable.png'
     },
     {
       link: '',
       title: 'Bbbbb',
-      desc: 'scshere',
+      desc: '',
       icon: 'social:ic_group_24px',      image: 'tim2.png'
     },
     {
       link: '',
       title: 'Ccccc',
-      desc: 'App description goes here',
+      desc: '',
       icon: 'social:ic_group_24px',    },
     {
       link: '',
       title: 'Ddddd',
-      desc: 'App description goes here',
+      desc: ' ',
       icon: 'social:ic_group_24px',    },
     {
       link: '',
       title: 'Eeeee',
-      desc: 'App description goes here',
+      desc: ' ',
       icon: 'social:ic_group_24px',    },
     {
       link: '',
       title: 'Fffff',
-      desc: 'App description goes here',
+      desc: ' ',
       icon: 'social:ic_group_24px',    },
     {
       link: '',
       title: 'Ggggg',
-      desc: 'App description goes here',
+      desc: ' ',
       icon: 'social:ic_group_24px',    },
     {
       link: '',
       title: 'Hhhhh',
-      desc: 'App description goes here',
+      desc: ' ',
       icon: 'social:ic_group_24px',    },
     {
       link: '',
       title: 'Iiiii',
-      desc: 'App description goes here',
+      desc: ' ',
       icon: 'social:ic_group_24px',    },
     {
       link: '',
       title: 'Kkkk',
-      desc: 'App description goes here',
+      desc: ' ',
       icon: 'social:ic_group_24px',    }
   ];
 
