@@ -2,6 +2,14 @@
   cursor: pointer;
 
 }
+.switchdemoBasicUsage .inset {
+    background-color: rgba(140, 81, 146, 1) !important ;
+
+  padding-left: 25px;
+  padding-top: 25px; }
+
+  
+
 [id="bg"] {
     background: center center fixed ;
     -webkit-background-size: contain;
@@ -17,6 +25,11 @@
   color: rgb(255, 255, 255);
 
 
+}
+md-switch .md-container{
+    
+  height:100px;
+  color: rgba(240, 248, 255, 0.918) !important ;
 }
 md-content.md-default-theme {
   fill: rgba(79, 113, 187, 0.699);

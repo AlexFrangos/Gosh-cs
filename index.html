@@ -6,17 +6,28 @@
   <meta charset="UTF-8">
   <title>Nav GOSH Team 2</title>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel = "stylesheet"
+         href = "https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+      <link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="css/style.css">
 
-
-  <link rel="stylesheet" href="css/style.css">
-
+      <script language = "javascript">
+        
+      </script>      
+  
 
 </head>
 <style>
 body  {
     background-image: url("back.png") !important;
-    background-color: #cccccc !important;
+    background-repeat: no-repeat !important;
+    background-size: auto !important ;
+}
 }
 </style>
 
@@ -29,7 +40,7 @@ body  {
     <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/angular_material/0.10.0/angular-material.min.css">
   </head>
  
-  <body   layout="row" ng-controller="AppCtrl"  id="bg" ng-app="mlwcApp" ng-controller="BgImagesListController" ng-style="selBGImg">
+  <body   layout="row" ng-controller="AppCtrl"  id="bg"  ng-controller = "aswitchController as ctrl" ng-app="Myapp" ng-controller="BgImagesListController" ng-style="selBGImg">
       
     <md-sidenav layout="column" class="md-default-theme"  md-navigation-drawer" md-component-id="left"
       md-is-locked-open="$mdMedia('gt-md')">
@@ -40,7 +51,7 @@ body  {
           <span flex></span>
         </div>
         <span flex></span>
-        <div class="md-body-2">GOSH Hospital Lastname</div>
+        <div class="md-body-2">GOSH Hospital </div>
         <div class="md-body-1">`Team 2</div>
       </md-toolbar>
       <md-list>
@@ -61,7 +72,7 @@ body  {
       </md-list>
     </md-sidenav>
     <md-content layout="column" class="relative" layout-fill role="main">
-      <md-button class="md-fab md-fab-bottom-right" aria-label="Add" ng-click="showAdd($event)">
+       
       <md-icon md-svg-icon="content:ic_add_24px" aria-label="Plus"></md-icon>
       </md-button>
 
@@ -88,7 +99,7 @@ body  {
             </div>
           </md-toolbar>
           <md-list flex>
-            <md-list-item class="md-2-line" ng-repeat="item in apps | filter:search" role="link" ng-click="toggleSidenav('nav'); $parent.appIcon = item.icon; $parent.appName = item.title; $parent.appimg = item.image; $parent.appDesc = item.desc;">
+            <md-list-item class="md-2-line" ng-repeat="item in apps | filter:search" role="link" ng-click="toggleSidenav('nav'); $parent.appIcon = item.icon; $parent.appName = item.title; $parent.appimg = item.image; $parent.appimg2 = item.image2; $parent.appDesc = item.desc;">
               <md-icon md-svg-icon="{{item.icon}}" aria-label="{{item.title}}"></md-icon>
               <div class="md-list-item-text">
                 <div class="md-body-2">{{item.title}}</div>
@@ -139,53 +150,33 @@ body  {
                     </div>
                   </md-list-item>
                   <md-divider></md-divider>
+
                 </md-toolbar>
-                <img id='myimage' ng-src="{{appimg}}"  onError="this.onerror=null;this.src='/timetable.png';" />
 
-        <script>
-          function change() // no ';' here
-        {
- 
-                var change = document.getElementById("button");
-                if (change.innerHTML == "optimized")
-                {
-                    change.innerHTML = "unoptimized";
-                     document.getElementById('myimage').src='tim2.png'
-                }
-                else {
-                    change.innerHTML = "optimized";
-                     document.getElementById('myimage').src='timetable.png'
-                }
-              }
+                <div class="inset switchdemoBasicUsage" ng-controller="AppCtrl" ng-cloak="" ng-app="app">
+        <md-switch  id ="vis" ng-model="data.cb6"  aria-label="Finished?" ng-change="onChange(data.cb6)">
         
+         </md-switch>
+         <img id='myimage' ng-src =" {{message }}" />
+</div>  
+               
+
+         
 
 
 
-
-        </script>
-
-
-
-                </md-button>
-
+ 
                 </md-list-item>
                 </md-list>
               </md-card>
             </div>
           </div>
-          <button onclick="change()" value="optimized" id='button' >optimized</button>
+          
 
         </md-content>
       </md-content>
     </md-content>
 
-
-    <!-- Angular Material Dependencies -->
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-aria.js"></script>
-    <!-- Angular Material -->
-    <script src="//ajax.googleapis.com/ajax/libs/angular_material/0.10.0/angular-material.min.js"></script>
   </body>
 
   </html>
@@ -194,11 +185,7 @@ body  {
 
   <script src="js/index.js"></script>
 
-  <style>
-      div[role=main] > md-content {
-          background-image: url(tim2.png);
-          }
-      </style>
+   
 
 
 </body>

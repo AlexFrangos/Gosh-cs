@@ -1,14 +1,13 @@
 var app = angular.module('StarterApp', ['ngMaterial']);
 var mlwcApp = angular.module('mlwcApp', [])
-.controller('BgImagesListController', function($scope, $http) {
-    $scope.selBGImg = {
-        'background-image' : 'url(https://wiki.teamfortress.com/w/images/thumb/e/ec/Das_Naggenvatcher.png/250px-Das_Naggenvatcher.png)'
-    };
+ 
 
-})
+ 
+ 
+
+app.controller('AppCtrl', ['$scope', '$mdBottomSheet',   '$mdSidenav', '$mdDialog',  function ($scope,  $mdBottomSheet, $mdSidenav, $mdDialog) {
 
 
-app.controller('AppCtrl', ['$scope', '$mdBottomSheet', '$mdSidenav', '$mdDialog', function ($scope, $mdBottomSheet, $mdSidenav, $mdDialog) {
 
   // Toolbar search toggle
   $scope.toggleSearch = function (element) {
@@ -19,13 +18,11 @@ app.controller('AppCtrl', ['$scope', '$mdBottomSheet', '$mdSidenav', '$mdDialog'
   $scope.toggleSidenav = function (menuId) {
     $mdSidenav(menuId).toggle();
   };
-  $scope.speaker = {};
-  $scope.speaker.img = "https://cdn.shopify.com/s/files/1/0303/7725/t/2/assets/clio-emt-speaker.png?245932330282961812";
-  // Menu items
+   // Menu items
   $scope.menu = [{
       link: '',
       title: 'Dashboard',
-      icon: 'action:ic_dashboard_24px' // we have to use Google's naming convention for the IDs of the SVGs in the spritesheet
+      icon: 'action:ic_dashboard_24px'  
     },
     {
       link: '',
@@ -54,15 +51,19 @@ app.controller('AppCtrl', ['$scope', '$mdBottomSheet', '$mdSidenav', '$mdDialog'
   $scope.apps = [{
       link: '',
       title: 'Fist',
-      desc: '',
+      desc: 'dfvd',
+      desc2: 'ppp',
       icon: 'social:ic_group_24px',
-      image: 'timetable.png'
+      image: 'timetable.png',
+      image2: 'back.png'
     },
     {
       link: '',
       title: 'Second',
-      desc: '',
-      icon: 'social:ic_group_24px',      image: 'tim2.png'
+      desc: 'rr',
+      desc2: '22',
+      icon: 'social:ic_group_24px',    
+        image: 'tim2.png'
     },
     {
       link: '',
@@ -105,6 +106,25 @@ app.controller('AppCtrl', ['$scope', '$mdBottomSheet', '$mdSidenav', '$mdDialog'
       desc: ' ',
       icon: 'social:ic_group_24px',    }
   ];
+
+             
+        
+         $scope.message = 'tim1.png';
+            var count = false;
+            $scope.onChange = function(cbStdate) {
+                if (count === false) {
+                    $scope.message = 'tim1.png';
+                    count = true;}
+                    else {
+
+                    $scope.message = 'tim3.png';
+                    count = false;
+                }
+
+             };
+
+
+
 
   // Mock attributes
   $scope.attributes = [{
