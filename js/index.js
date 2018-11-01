@@ -215,6 +215,12 @@ app.config(function ($mdIconProvider) {
             document.getElementById('myimage').src = 'hm2.png'
          }         
          function change5() {
+          var x = document.getElementById("toggle2");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
           
            
             document.getElementById('myimage').src = 'tim1.jpg';
