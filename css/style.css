@@ -19,10 +19,10 @@
 }
 
 *:not(.toggle) {
-  background-color: rgba(140, 81, 146, 0) !important ;
+  background-color: rgba(0, 0, 0, 0.966) !important ;
   background-size: cover;
 
-  color: rgb(0, 0, 0);
+  color: rgb(252, 252, 252);
 
 
 }
