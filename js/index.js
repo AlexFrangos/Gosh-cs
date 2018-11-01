@@ -53,7 +53,7 @@ app.controller('AppCtrl', ['$scope', '$mdBottomSheet',   '$mdSidenav', '$mdDialo
       title: '',
       desc: '',
       desc2: 'ppp',
-      icon: 'social:ic_group_24px',
+      icon: '',
       image: 'tim1.png',
       image2: 'back.png'
     },
