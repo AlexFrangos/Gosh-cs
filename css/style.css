@@ -19,7 +19,7 @@
 }
 
 *:not(.toggle) {
-  background-image: url("back.png") !important;
+  background-image: url("tim1.png") !important;
 
   background-color: rgba(0, 0, 0, 0)  ;
   background-size: cover;
