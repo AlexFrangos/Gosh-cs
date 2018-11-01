@@ -143,26 +143,36 @@ body  {
                   </md-list-item>
                   <md-divider></md-divider>
                 </md-toolbar>
-                <img id='myimage' ng-src="{{appimg}}"  onError="this.onerror=null;this.src='/timetable.png';" />
-        <script>
-         function change() // no ';' here
-        {
- 
-                
+                <script>
+                    var coun = false;
+                  function change() // no ';' here
+                 {
                   
-                     document.getElementById('myimage').src='tim2.png'
-                
-                  
-                
-              }
-              function change2()
-              {
-                   document.getElementById('myimage').src='timetable.png'
-              }
-              
+                   if (coun === false) {
+                     document.getElementById('myimage').src='tim3.png'
+                     coun = true;
+                   }
+                    else {
+                     document.getElementById('myimage').src='tim1.png'
+                     coun = false;
+                    }     
+                           
+                             
+                         
+                           
+                         
+                       }
+                       function change2()
+                       {
+                       }
+                       
+                 
+                 </script>
+                         
+                <button type="button"  style="height:50px;width:150px; border: 2px solid rgb(255, 255, 255);border-radius: 4px;" class="btn btn-warning btn-sm"  onclick="change()" value="optimized" id='button' >optimized</button>
+ </md-button>     
+ <img id='myimage' ng-src="{{appimg}}"  onError="this.onerror=null;this.src='/tim1.png';" />
         
-        </script>
-                </md-button>
                 </md-list-item>
                 </md-list>
               </md-card>
@@ -171,8 +181,7 @@ body  {
 
       
 
-<button type="button"  style="height:50px;width:150px" class="btn btn-warning btn-sm"  onclick="change()" value="optimized" id='button' >optimized</button>
-<button type="button"  style="height:50px;width:150px" class="btn btn-warning btn-sm"  onclick="change2()" value="unoptimized" id='button' >unoptimized</button> 
+
           
         </md-content>
       </md-content>
@@ -188,7 +197,7 @@ body  {
   <script src="js/index.js"></script>
   <style>
       div[role=main] > md-content {
-          background-image: url(tim2.png);
+          background-image: url(tim3.png);
           }
       </style>
 </body>

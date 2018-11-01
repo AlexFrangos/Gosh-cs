@@ -54,7 +54,7 @@ app.controller('AppCtrl', ['$scope', '$mdBottomSheet',   '$mdSidenav', '$mdDialo
       desc: 'dfvd',
       desc2: 'ppp',
       icon: 'social:ic_group_24px',
-      image: 'timetable.png',
+      image: 'tim1.png',
       image2: 'back.png'
     },
     {
