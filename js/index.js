@@ -229,23 +229,6 @@ function DemoCtrl($timeout, $q) {
    * Search for states... use $timeout to simulate
    * remote dataservice call.
    */
-
- function change() // no ';' here
-{
- 
-     var change = document.getElementById("button");
-                if (change.innerHTML == "optimized")
-                {
-                    change.innerHTML = "unoptimized";
-                     document.getElementById('myimage').src='tim2.png'
-                }
-                else {
-                    change.innerHTML = "optimized";
-                     document.getElementById('myimage').src='timetable.png'
-                }
-              }
-
-
   function querySearch(query) {
     var results = query ? self.states.filter(createFilterFor(query)) : [];
     return results;

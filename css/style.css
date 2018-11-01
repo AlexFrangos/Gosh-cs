@@ -122,3 +122,10 @@ md-content md-backdrop {
   opacity: 0;
   overflow: hidden;
 }
+
+.btn-xl {
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    width:50%;    //Specify your width here
+}
