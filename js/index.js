@@ -50,7 +50,7 @@ app.controller('AppCtrl', ['$scope', '$mdBottomSheet',   '$mdSidenav', '$mdDialo
   // App items
   $scope.apps = [{
       link: '',
-      title: 'Fist',
+      title: 'Doctor 1',
       desc: 'dfvd',
       desc2: 'ppp',
       icon: 'social:ic_group_24px',

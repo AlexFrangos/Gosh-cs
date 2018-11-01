@@ -95,7 +95,7 @@ body  {
             <md-list-item class="md-2-line" ng-repeat="item in apps | filter:search" role="link" ng-click="toggleSidenav('nav'); $parent.appIcon = item.icon; $parent.appName = item.title; $parent.appimg = item.image; $parent.appDesc = item.desc;">
               <md-icon md-svg-icon="{{item.icon}}" aria-label="{{item.title}}"></md-icon>
               <div class="md-list-item-text">
-                <div class="md-body-2">{{item.title}}</div>
+                <div class="md-body-2" >{{item.title}}</div>
                 <p class="md-body-2">{{item.desc}}</p>
               </div>
               <md-divider></md-divider>
@@ -122,8 +122,8 @@ body  {
                   <md-list-item class="md-3-line">
  
                     <div class="md-list-item-text">
-                      <div class="md-headline">{{appName || ''}}</div>
-                      <h4>{{appDesc || ''}}</h4>
+                      <div class="md-headline" ng-init="appName='Doctor 1'">{{appName || 'daa'}}</div>
+                       
                     </div>
                   </md-list-item>
                 </md-toolbar>
@@ -169,9 +169,9 @@ body  {
                  
                  </script>
                          
-                <button type="button"  style="height:50px;width:150px; border: 2px solid rgb(255, 255, 255);border-radius: 4px;" class="btn btn-warning btn-sm"  onclick="change()" value="optimized" id='button' >optimized</button>
+                <button id="button"  style="height:50px;width:150px; border: 2px solid rgb(255, 255, 255);border-radius: 4px;" class="btn button3 btn-warning btn-sm"  onclick="change()" value="optimized" id='button' >Press to optimize!</button>
  </md-button>     
- <img id='myimage' ng-src="{{appimg}}"  onError="this.onerror=null;this.src='/tim1.png';" />
+ <img id='myimage' ng-src="tim1.png"   onError="this.src='/tim1.png';" />
         
                 </md-list-item>
                 </md-list>

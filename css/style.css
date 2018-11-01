@@ -129,3 +129,8 @@ md-content md-backdrop {
     border-radius: 10px;
     width:50%;    //Specify your width here
 }
+
+.button3:hover {
+  background-color: #4f80db !important;
+  color: white !important ;
+}
