@@ -19,10 +19,12 @@
 }
 
 *:not(.toggle) {
-  background-color: rgba(0, 0, 0, 0.966) !important ;
+  background-image: url("back.png") !important;
+
+  background-color: rgba(0, 0, 0, 0)  ;
   background-size: cover;
 
-  color: rgb(252, 252, 252);
+  color: rgb(50, 68, 230);
 
 
 }
