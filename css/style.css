@@ -8,7 +8,18 @@
   padding-left: 25px;
   padding-top: 25px; }
 
-  
+  /*img {
+    width: 800px !important; 
+    height: 500px !important;
+    float: left;
+    margin: 30px  30px 30px 30px !important;
+    padding: 3px;}
+    */
+
+.imgg {
+  position: static !important;
+
+} 
 
 [id="bg"] {
     background: center center fixed ;

@@ -71,19 +71,19 @@ body  {
         </md-list-item>
       </md-list>
     </md-sidenav>
-    <md-content layout="column" class="relative" layout-fill role="main">
+    <!-- <md-content layout="column" class="relative" layout-fill role="main"> -->
        
-      <md-icon md-svg-icon="content:ic_add_24px" aria-label="Plus"></md-icon>
-      </md-button>
+      <!-- <md-icon md-svg-icon="content:ic_add_24px" aria-label="Plus"></md-icon> -->
+      <!-- </md-button> -->
 
       <md-content flex layout="row">
         <md-sidenav layout="column" layout-fill class="md-sidenav-left md-sidenav-list" md-component-id="nav"
           md-is-locked-open="$mdMedia('gt-sm')">
           <md-toolbar class="md-whiteframe-z1" ng-class="{'md-hue-1':showSearch}">
             <div class="md-toolbar-tools md-tall">
-              <md-button class="md-icon-button" ng-click="toggleSidenav('left')" hide-gt-md aria-label="Menu">
+              <<!-- md-button class="md-icon-button" ng-click="toggleSidenav('left')" hide-gt-md aria-label="Menu">
                 //<md-icon md-svg-icon="navigation:ic_menu_24px" aria-label="Menu"></md-icon>
-              </md-button>
+              </md-button> -->
               <h3 ng-if="!showSearch">
                 Doctors
               </h3>
@@ -110,16 +110,15 @@ body  {
 
           </md-list>
         </md-sidenav>
-        <md-content layout="column" layout-fill>
-          <md-toolbar class="animate-show class"abc" md-whiteframe-z1">
-            <div class="md-toolbar-tools md-tall">
+        <md-content layout="column" >
+             <div class="md-toolbar-tools md-tall">
               <md-button class="md-icon-button" ng-click="toggleSidenav('nav')" hide-gt-sm aria-label="Menu">
                 <md-icon md-svg-icon="navigation:ic_arrow_back_24px" aria-label="Menu"></md-icon>
               </md-button>
               <span flex></span>
-              <md-button class="md-icon-button" aria-label="Open Settings" ng-click="showListBottomSheet($event)">
+              <!-- <md-button class="md-icon-button" aria-label="Open Settings" ng-click="showListBottomSheet($event)">
                 <md-icon md-svg-icon="navigation:ic_more_vert_24px" aria-label="More"></md-icon>
-              </md-button>
+              </md-button> -->
             </div>
           </md-toolbar>
           <div class="inset" hide-sm></div>
@@ -130,7 +129,7 @@ body  {
                   <md-list-item class="md-3-line">
  
                     <div class="md-list-item-text">
-                      <div class="md-headline">{{appName || ''}}</div>
+                      <div class="md-headline">{{appName || 'Doctor\'s Timetable'}}</div>
                       <h4>{{appDesc || ''}}</h4>
                     </div>
                   </md-list-item>
@@ -153,9 +152,9 @@ body  {
 
                 </md-toolbar>
 
-                <div class="inset switchdemoBasicUsage" ng-controller="AppCtrl" ng-cloak="" ng-app="app">
-        <md-switch  id ="vis" ng-model="data.cb6"  aria-label="Finished?" ng-change="onChange(data.cb6)">
-        
+                <div  id ="imgg" class="inset switchdemoBasicUsage" ng-controller="AppCtrl" ng-cloak="" ng-app="app">
+        <md-switch   ng-model="data.cb6"  aria-label="Finished?" ng-change="onChange(data.cb6)">
+        Optimise: 
          </md-switch>
          <img id='myimage' ng-src =" {{message }}" />
 </div>  

@@ -29,11 +29,7 @@ app.controller('AppCtrl', ['$scope', '$mdBottomSheet',   '$mdSidenav', '$mdDialo
       title: 'heatmaps',
       icon: 'social:ic_group_24px'
     },
-    {
-      link: '',
-      title: 'Messages',
-      icon: 'communication:ic_message_24px'
-    }
+     
   ];
   $scope.admin = [{
       link: '',
@@ -50,22 +46,22 @@ app.controller('AppCtrl', ['$scope', '$mdBottomSheet',   '$mdSidenav', '$mdDialo
   // App items
   $scope.apps = [{
       link: '',
-      title: 'Fist',
-      desc: 'dfvd',
-      desc2: 'ppp',
+      title: 'Doctor\'s Timetable',
+      desc: '',
+      desc2: '',
       icon: 'social:ic_group_24px',
       image: 'timetable.png',
       image2: 'back.png'
     },
     {
       link: '',
-      title: 'Second',
-      desc: 'rr',
+      title: 'Heatmpas',
+      desc: '',
       desc2: '22',
       icon: 'social:ic_group_24px',    
         image: 'tim2.png'
     },
-    {
+    /*{
       link: '',
       title: 'Third',
       desc: '',
@@ -75,36 +71,7 @@ app.controller('AppCtrl', ['$scope', '$mdBottomSheet',   '$mdSidenav', '$mdDialo
       title: 'Ddddd',
       desc: ' ',
       icon: 'social:ic_group_24px',    },
-    {
-      link: '',
-      title: 'Fourth',
-      desc: ' ',
-      icon: 'social:ic_group_24px',    },
-    {
-      link: '',
-      title: 'Fifth',
-      desc: ' ',
-      icon: 'social:ic_group_24px',    },
-    {
-      link: '',
-      title: 'Sixth',
-      desc: ' ',
-      icon: 'social:ic_group_24px',    },
-    {
-      link: '',
-      title: 'Seventh',
-      desc: ' ',
-      icon: 'social:ic_group_24px',    },
-    {
-      link: '',
-      title: 'Eighth',
-      desc: ' ',
-      icon: 'social:ic_group_24px',    },
-    {
-      link: '',
-      title: 'Ninth',
-      desc: ' ',
-      icon: 'social:ic_group_24px',    }
+    */
   ];
 
              
