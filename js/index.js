@@ -26,7 +26,7 @@ app.controller('AppCtrl', ['$scope', '$mdBottomSheet',   '$mdSidenav', '$mdDialo
     },
     {
       link: '',
-      title: 'heatmaps',
+      title: 'Data maps',
       icon: 'social:ic_group_24px'
     },
     {
@@ -50,7 +50,16 @@ app.controller('AppCtrl', ['$scope', '$mdBottomSheet',   '$mdSidenav', '$mdDialo
   // App items
   $scope.apps = [{
       link: '',
-      title: 'Examole doctor',
+      title: 'Example doctor',
+      desc: '',
+      desc2: 'ppp',
+      icon: 'social:ic_group_24px',
+      image: 'tim1.png',
+      image2: 'back.png'
+    },
+    {
+      link: '',
+      title: 'Example doctor 2',
       desc: '',
       desc2: 'ppp',
       icon: 'social:ic_group_24px',
