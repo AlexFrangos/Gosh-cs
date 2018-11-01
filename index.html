@@ -20,8 +20,11 @@
 </head>
 <style>
   body  {
-    background-color: #000000 !important;
+     
+    background-image: url("back.png") !important;
+    background-color: #cccccc !important;
     background-size: cover !important;
+    color:white !important; 
 }
 </style>
 
@@ -54,7 +57,7 @@
           </div>
         </md-list-item>
         <md-divider></md-divider>
-        <md-subheader class="md-no-sticky">Management</md-subheader>
+        <md-subheader class="md-no-sticky"  >Management</md-subheader>
         <md-list-item class="md-2-line" ng-repeat="item in admin" role="link" ng-click="toggleSidenav('left')">
           <md-icon md-svg-icon="{{item.icon}}" aria-label="{{item.title}}"></md-icon>
           <div class="md-list-item-text">
@@ -98,16 +101,16 @@
               <md-divider></md-divider>
             </md-list-item>
           </md-list>
-          <button class="btn btn-default"  style="padding:30px;position:relative;top:50px;right:30px;" onclick="change5()" 
+          <button class="btn btn-default"  style="color:white !important;  padding:30px;position:relative;top:50px;right:30px;" onclick="change5()" 
               <md-icon md-svg-icon="{{item.icon}}" aria-label="'hbh'"></md-icon>Example Timetable </button>
               <div class="md-list-item-text">
-                <div class="md-body-2">Example Timetable</div>
+                <div class="md-body-2"></div>
                </div>
 
-           <button class="btn btn-default" style="padding:30px;position:relative;top:50px;right:30px;" onclick="change6()" 
+           <button class="btn btn-default" style="color:white !important; padding:30px;position:relative;top:50px;right:30px;" onclick="change6()" 
               <md-icon md-svg-icon="{{item.icon}}" aria-label="'hbh'"></md-icon>Example Heatmap </button>
               <div class="md-list-item-text">
-                <div class="md-body-2">Example Heatmap</div>
+                <div class="md-body-2"></div>
                </div>
                
               <md-divider></md-divider>

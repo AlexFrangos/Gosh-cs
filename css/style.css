@@ -19,12 +19,9 @@
 }
 
 *:not(.toggle) {
-  background-image: url("tim1.png") !important;
-
-  background-color: rgba(0, 0, 0, 0)  ;
-  background-size: cover;
-
-  color: rgb(50, 68, 230);
+   
+    background-color: rgba(140, 81, 146, 0) !important ;
+    background-size: cover;
 
 
 }
@@ -57,6 +54,9 @@ md-sidenav > md-toolbar.md-tall {
   height: auto;
   max-height: 15px;
 }
+
+.md-no-sticky{
+  color:white !important;}
 
 md-sidenav md-divider {
   margin-top: 4px;
@@ -127,4 +127,16 @@ md-content md-backdrop {
 
 .toggle2 {
   padding: 50px;
+}
+  
+  
+  .*{
+    background-image: "back.png" !important;
+  
+    background-color: rgba(0, 0, 0, 0)  ;
+    background-size: cover;
+  
+    color: rgb(50, 68, 230);
+  
+  
   }
