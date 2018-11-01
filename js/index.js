@@ -57,15 +57,7 @@ app.controller('AppCtrl', ['$scope', '$mdBottomSheet',   '$mdSidenav', '$mdDialo
       image: 'tim1.png',
       image2: 'back.png'
     },
-    {
-      link: '',
-      title: 'Example doctor 2',
-      desc: '',
-      desc2: 'ppp',
-      icon: 'social:ic_group_24px',
-      image: 'tim1.png',
-      image2: 'back.png'
-    }
+     
   ];
 
              
@@ -221,4 +213,18 @@ app.config(function ($mdIconProvider) {
   
           } else
             document.getElementById('myimage').src = 'hm2.png'
+         }         
+         function change5() {
+          
+           
+            document.getElementById('myimage').src = 'tim1.jpg';
+  
+  
+         }         
+         function change6() {
+          
+           
+            document.getElementById('myimage').src = 'hm.jpg';
+  
+          
          }         

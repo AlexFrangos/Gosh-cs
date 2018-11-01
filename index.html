@@ -88,8 +88,8 @@
               </md-input-container>
             </div>
           </md-toolbar>
-          <md-list flex>
-            <md-list-item class="md-2-line" ng-repeat="item in apps | filter:search" role="link" ng-click="toggleSidenav('nav'); $parent.appIcon = item.icon; $parent.appName = item.title; $parent.appimg = item.image; $parent.appDesc = item.desc;">
+          <md-list flex:0>
+            <md-list-item class="md-2-line" ng-repeat="item in apps | filter:search" role="link" onclick="change5()">
               <md-icon md-svg-icon="{{item.icon}}" aria-label="{{item.title}}"></md-icon>
               <div class="md-list-item-text">
                 <div class="md-body-2">{{item.title}}</div>
@@ -98,12 +98,12 @@
               <md-divider></md-divider>
             </md-list-item>
           </md-list>
-          <md-list-item class="md-2-line" ng-repeat="item in apps | filter:search" role="link" ng-click="toggleSidenav('nav'); $parent.appIcon = item.icon; $parent.appName = item.title; $parent.appimg = item.image; $parent.appDesc = item.desc;">
-              <md-icon md-svg-icon="{{item.icon}}" aria-label="{{item.title}}"></md-icon>
+          <md-list-item class="md-2-line" style="padding:30px;position:relative;top:50px;right:30px;" onclick="change6()">
+              <md-icon md-svg-icon="{{item.icon}}" aria-label="'hbh'"></md-icon>
               <div class="md-list-item-text">
-                <div class="md-body-2">'testtt'</div>
-                <p class="md-body-2">{{item.desc}}</p>
-              </div>
+                <div class="md-body-2">Example Heatmap</div>
+               </div>
+               
               <md-divider></md-divider>
             </md-list-item>
           </md-list>
@@ -161,7 +161,7 @@ data-size="large" data-style="slow" data-onstyle="info" data-offstyle="primary" 
 </input>
                 <!--        <button id="button"  style="height:50px;width:150px; border: 2px solid rgb(255, 255, 255);border-radius: 4px;" class="btn button3 btn-warning btn-sm"  onclick="change()" value="optimized" id='button' >Press to optimize!</button>
  </md-button>    -->
-                <img id='myimage' ng-src="hm.png" onError="this.src='/tim1.png';" />
+                <img id='myimage' ng-src="black.png" onError="this.src='back.png';" />
 
                 </md-list-item>
                 </md-list>
