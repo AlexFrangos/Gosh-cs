@@ -50,79 +50,36 @@ app.controller('AppCtrl', ['$scope', '$mdBottomSheet',   '$mdSidenav', '$mdDialo
   // App items
   $scope.apps = [{
       link: '',
-      title: 'Doctor 1',
-      desc: 'dfvd',
+      title: 'Examole doctor',
+      desc: '',
       desc2: 'ppp',
       icon: 'social:ic_group_24px',
       image: 'tim1.png',
       image2: 'back.png'
-    },
-    {
-      link: '',
-      title: 'Second',
-      desc: 'rr',
-      desc2: '22',
-      icon: 'social:ic_group_24px',    
-        image: 'tim2.png'
-    },
-    {
-      link: '',
-      title: 'Third',
-      desc: '',
-      icon: 'social:ic_group_24px',    },
-    {
-      link: '',
-      title: 'Ddddd',
-      desc: ' ',
-      icon: 'social:ic_group_24px',    },
-    {
-      link: '',
-      title: 'Fourth',
-      desc: ' ',
-      icon: 'social:ic_group_24px',    },
-    {
-      link: '',
-      title: 'Fifth',
-      desc: ' ',
-      icon: 'social:ic_group_24px',    },
-    {
-      link: '',
-      title: 'Sixth',
-      desc: ' ',
-      icon: 'social:ic_group_24px',    },
-    {
-      link: '',
-      title: 'Seventh',
-      desc: ' ',
-      icon: 'social:ic_group_24px',    },
-    {
-      link: '',
-      title: 'Eighth',
-      desc: ' ',
-      icon: 'social:ic_group_24px',    },
-    {
-      link: '',
-      title: 'Ninth',
-      desc: ' ',
-      icon: 'social:ic_group_24px',    }
+    }
   ];
 
              
-        
-         $scope.message = 'tim1.png';
-            var count = false;
-            $scope.onChange = function(cbStdate) {
-                if (count === false) {
-                    $scope.message = 'tim1.png';
-                    count = true;}
-                    else {
-
-                    $scope.message = 'tim3.png';
-                    count = false;
-                }
-
-             };
-
+  
+   
+      
+  
+  
+        function change() // no ';' here
+        {
+  
+          if (coun === false) {
+            document.getElementById('myimage').src = 'tim3.png'
+            coun = true;
+          } else {
+            document.getElementById('myimage').src = 'tim1.png'
+            coun = false;
+          }
+        }
+  
+        function change2() {}
+  
+       
 
 
 
@@ -150,17 +107,7 @@ app.controller('AppCtrl', ['$scope', '$mdBottomSheet',   '$mdSidenav', '$mdDialo
   ];
 
   // Bottomsheet & Modal Dialogs
-  $scope.alert = '';
-  $scope.showListBottomSheet = function ($event) {
-    $scope.alert = '';
-    $mdBottomSheet.show({
-      template: '<md-bottom-sheet class="md-list md-has-header"><md-list><md-list-item class="md-2-line" ng-repeat="item in items" role="link" md-ink-ripple><md-icon md-svg-icon="{{item.icon}}" aria-label="{{item.name}}"></md-icon><div class="md-list-item-text"><h3>{{item.name}}</h3></div></md-list-item> </md-list></md-bottom-sheet>',
-      controller: 'ListBottomSheetCtrl',
-      targetEvent: $event
-    }).then(function (clickedItem) {
-      $scope.alert = clickedItem.name + ' clicked!';
-    });
-  };
+  
 
   $scope.showAdd = function (ev) {
     $mdDialog.show({
@@ -176,30 +123,7 @@ app.controller('AppCtrl', ['$scope', '$mdBottomSheet',   '$mdSidenav', '$mdDialo
   };
 }]);
 
-app.controller('ListBottomSheetCtrl', function ($scope, $mdBottomSheet) {
-  $scope.items = [{
-      name: 'Share',
-      icon: 'social:ic_share_24px'
-    },
-    {
-      name: 'Upload',
-      icon: 'file:ic_cloud_upload_24px'
-    },
-    {
-      name: 'Copy',
-      icon: 'content:ic_content_copy_24px'
-    },
-    {
-      name: 'Print this page',
-      icon: 'action:ic_print_24px'
-    },
-  ];
-
-  $scope.listItemClick = function ($index) {
-    var clickedItem = $scope.items[$index];
-    $mdBottomSheet.hide(clickedItem);
-  };
-});
+ 
 
 function DialogController($scope, $mdDialog) {
   $scope.hide = function () {
@@ -247,33 +171,10 @@ function DemoCtrl($timeout, $q) {
       };
     });
   }
-  /**
-   * Create filter function for a query string
-   */
-  function createFilterFor(query) {
-    var lowercaseQuery = angular.lowercase(query);
-    return function filterFn(state) {
-      return (state.value.indexOf(lowercaseQuery) === 0);
-    };
-  }
+   
 };
 
-app.config(function ($mdThemingProvider) {
-  var customBlueMap = $mdThemingProvider.extendPalette('indigo', {
-    'contrastDefaultColor': 'light',
-    'contrastDarkColors': ['50'],
-    '50': 'rgb(79, 113, 187);'
-  });
-  $mdThemingProvider.definePalette('customBlue', customBlueMap);
-  $mdThemingProvider.theme('default')
-    .primaryPalette('customBlue', {
-      'default': '500',
-      'hue-1': '50'
-    })
-    .accentPalette('pink');
-  $mdThemingProvider.theme('input', 'default')
-    .primaryPalette('grey')
-});
+
 
 app.config(function ($mdIconProvider) {
   $mdIconProvider
@@ -284,14 +185,8 @@ app.config(function ($mdIconProvider) {
     .iconSet('av', 'https://raw.githubusercontent.com/google/material-design-icons/master/sprites/svg-sprite/svg-sprite-av.svg', 24)
     .iconSet('communication', 'https://raw.githubusercontent.com/google/material-design-icons/master/sprites/svg-sprite/svg-sprite-communication.svg', 24)
     .iconSet('content', 'https://raw.githubusercontent.com/google/material-design-icons/master/sprites/svg-sprite/svg-sprite-content.svg', 24)
-    .iconSet('device', 'https://raw.githubusercontent.com/google/material-design-icons/master/sprites/svg-sprite/svg-sprite-device.svg', 24)
-    .iconSet('editor', 'https://raw.githubusercontent.com/google/material-design-icons/master/sprites/svg-sprite/svg-sprite-editor.svg', 24)
-    .iconSet('file', 'https://raw.githubusercontent.com/google/material-design-icons/master/sprites/svg-sprite/svg-sprite-file.svg', 24)
-    .iconSet('hardware', 'https://raw.githubusercontent.com/google/material-design-icons/master/sprites/svg-sprite/svg-sprite-hardware.svg', 24)
-    .iconSet('image', 'https://raw.githubusercontent.com/google/material-design-icons/master/sprites/svg-sprite/svg-sprite-image.svg', 24)
-    .iconSet('maps', 'https://raw.githubusercontent.com/google/material-design-icons/master/sprites/svg-sprite/svg-sprite-maps.svg', 24)
-    .iconSet('navigation', 'https://raw.githubusercontent.com/google/material-design-icons/master/sprites/svg-sprite/svg-sprite-navigation.svg', 24)
-    .iconSet('notification', 'https://raw.githubusercontent.com/google/material-design-icons/master/sprites/svg-sprite/svg-sprite-notification.svg', 24)
+        .iconSet('image', 'https://raw.githubusercontent.com/google/material-design-icons/master/sprites/svg-sprite/svg-sprite-image.svg', 24)
+      .iconSet('notification', 'https://raw.githubusercontent.com/google/material-design-icons/master/sprites/svg-sprite/svg-sprite-notification.svg', 24)
     .iconSet('social', 'https://raw.githubusercontent.com/google/material-design-icons/master/sprites/svg-sprite/svg-sprite-social.svg', 24)
     .iconSet('toggle', 'https://raw.githubusercontent.com/google/material-design-icons/master/sprites/svg-sprite/svg-sprite-toggle.svg', 24)
 
@@ -299,3 +194,22 @@ app.config(function ($mdIconProvider) {
     .iconSet('avatars', 'https://raw.githubusercontent.com/angular/material/master/docs/app/icons/avatar-icons.svg', 24)
     .defaultIconSet('https://raw.githubusercontent.com/google/material-design-icons/master/sprites/svg-sprite/svg-sprite-action.svg', 24);
 });
+
+ function change3() {
+          
+          if (document.getElementById("toggle2").checked == true) {
+            document.getElementById('myimage').src = 'tim3.png';
+  
+          } else
+            document.getElementById('myimage').src = 'tim1.png'
+         }
+
+
+         function change4() {
+          
+          if (document.getElementById("toggle3").checked == true) {
+            document.getElementById('myimage').src = 'hm.jpg';
+  
+          } else
+            document.getElementById('myimage').src = 'hm2.png'
+         }         
